@@ -1,6 +1,6 @@
 class Cat{
-    constructor(nazwa, base_health, base_damage, effect, strength){
-        this.nazwa = nazwa
+    constructor(name, base_health, base_damage, attribute){
+        this.name = name;
         this.level = 1 
         this.damageCalc = _=>{
             if(this.level==1){
@@ -11,7 +11,6 @@ class Cat{
             }
         }
         this.health = base_health+(this.level*10)
-        this.effect = effect;
-        this.strength = strength;
+        this.attribute = attribute;
     }
 }
