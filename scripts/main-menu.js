@@ -18,3 +18,4 @@ document.querySelector(".play").addEventListener("click",_=>{
 })
 //const playerName = prompt("Podaj nazwę gracza!")
 //let player = new Player(playerName)
+import Cat from catConstructor.js
