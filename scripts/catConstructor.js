@@ -14,3 +14,4 @@ class Cat{
         this.attribute = attribute;
     }
 }
+export{Cat()}
