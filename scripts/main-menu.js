@@ -1,4 +1,4 @@
-import Cat from './catConstructor.js';
+import Cat from '/catConstructor.js';
 const mainMenu = document.querySelector("audio")
 document.querySelector("input").addEventListener("click",_=>{
     switch(document.querySelector("input").value){
