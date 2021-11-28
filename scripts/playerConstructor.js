@@ -3,3 +3,4 @@ class Player{
         this.nazwa=nazwa;
     }
 }
+export {Player}

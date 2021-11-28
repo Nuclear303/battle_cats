@@ -7,3 +7,4 @@ class Enemy{
         this.attribute = attribute;
     }
 }
+export{Enemy}

@@ -17,3 +17,4 @@ class Chapter{
 }
 //last_chapter being an object made with this constructor,
 //level_list being an object defined in another file, but last_chapter.level_list being an object which is a parameter of last_chapter object
+export {Chapter}
