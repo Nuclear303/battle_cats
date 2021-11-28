@@ -1,4 +1,4 @@
-import Cat from '/catConstructor.js';
+import Cat from './catConstructor.js';
 const mainMenu = document.querySelector("audio")
 document.querySelector("input").addEventListener("click",_=>{
     switch(document.querySelector("input").value){
@@ -22,5 +22,3 @@ document.querySelector(".play").addEventListener("click",_=>{
 
 
 let tank = new Cat("Tank Cat", 400, 2, "None")
-
-tank.nazwa
