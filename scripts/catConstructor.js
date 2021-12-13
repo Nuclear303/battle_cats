@@ -1,4 +1,4 @@
-class Cat{
+export default class Cat{
     constructor(name, base_health, base_damage, attribute){
         this.name = name;
         this.level = 1 
@@ -14,4 +14,4 @@ class Cat{
         this.attribute = attribute;
     }
 }
-export{Cat}
+

@@ -44,8 +44,8 @@ body{
     font-size: xx-large;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-    border: 10px solid rgb(224, 150, 12);
-    background-color: rgb(238, 206, 24);
+    border: 5px solid #010000;
+    background-color: #eaaf00;
     border-radius: 20px;
 }
 @keyframes butSlide {
@@ -62,7 +62,41 @@ body{
     font-size: medium;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-    border: 5px solid rgb(224, 150, 12);
-    background-color: rgb(238, 206, 24);
+    border: 5px solid #010000;
+    background-color: #eaaf00;
     border-radius: 5px;
+}
+
+@keyframes chapSlide {
+    0% {
+        transform: translateX(-1000px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+.buttons{
+    width:700px;
+    height: 500px;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+.chapter{
+    height:150px;
+    width:220px;
+    background-color: #eaaf00;
+    border: 2px solid #010000;
+    border-radius: 10px;
+    font-size:16px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 800;
+    transform: translateX(-1100px) ;
+    visibility: hidden;
+}
+.chapter:hover{
+    font-size: 105%;
+    transform: translateY(5px);
 }

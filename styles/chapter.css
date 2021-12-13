@@ -1,0 +1,22 @@
+body{
+    background-color: beige;
+}
+.buttons{
+    width:700px;
+    height: 500px;
+}
+.chapter{
+    height:150px;
+    width:220px;
+    background-color: #eaaf00;
+    border: 2px solid #010000;
+    border-radius: 10px;
+    font-size:16px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 800;
+    visibility: hidden;
+}
+.chapter:hover{
+    font-size: 105%;
+    transform: translateY(-5px) ;
+}
