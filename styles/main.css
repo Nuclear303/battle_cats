@@ -13,6 +13,7 @@ body{
     animation: titleSlide 2000ms;
     -moz-animation: titleSlide 2000ms;
     animation-fill-mode: forwards;
+
 }
 @keyframes titleSlide{
     0% {
@@ -50,10 +51,10 @@ body{
 }
 @keyframes butSlide {
     0% {
-        transform: translateX(-20%);
+        transform: translateX(-2000px);
     }
     100% {
-        transform: translateX(580%);
+        transform: translateX(800px);
     }
 }
 .mute_button{
@@ -69,7 +70,7 @@ body{
 
 @keyframes chapSlide {
     0% {
-        transform: translateX(-1000px);
+        transform: translateX(-2000px);
     }
     100% {
         transform: translateX(0px);
