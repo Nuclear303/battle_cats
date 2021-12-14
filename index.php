@@ -32,5 +32,8 @@
     <audio src='audio/menu.mp3'></audio>
     <script type='module' src='scripts/main-menu.js'>
     </script>
+    <?php
+        echo("Działa");
+    ?>
 </body>
 </html>
