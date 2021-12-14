@@ -16,10 +16,10 @@ body{
 }
 @keyframes titleSlide{
     0% {
-        transform: translateY(-45%);
+        transform: translateY(-100%);
     }
     25% {
-        transform: translateY(140%);
+        transform: translateY(145%);
     }
     50% {
         transform: translateY(130%);
