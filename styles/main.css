@@ -4,16 +4,14 @@ body{
 .title{
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
     font-size: xx-large;
-    margin-left: 760px;
-    margin-top: 0px;
-    position:relative;
-    width:350px
-}
-.title{
+    margin-top: -10px;
+    width:350px;
     animation: titleSlide 2000ms;
     -moz-animation: titleSlide 2000ms;
     animation-fill-mode: forwards;
-
+    position:absolute;
+    left:37.5%;
+    transform: translate(-50%,-50%);
 }
 @keyframes titleSlide{
     0% {
@@ -26,7 +24,7 @@ body{
         transform: translateY(130%);
     }
     100% {
-        transform: translateY(180%);
+        transform: translateY(170%);
     }
 }
 .play_button{
@@ -37,7 +35,9 @@ body{
     animation: butSlide 2000ms;
     -moz-animation: butSlide 2000ms;
     animation-fill-mode: forwards;
-    margin-top: 15%;
+    position: absolute;
+    top:50%;
+    left: 50%;
 }
 .play{
     height: 70px;
@@ -48,13 +48,16 @@ body{
     border: 5px solid #010000;
     background-color: #eaaf00;
     border-radius: 20px;
+    position: absolute;
+    top:50%;
+    left: 50%;
 }
 @keyframes butSlide {
     0% {
         transform: translateX(-2000px);
     }
     100% {
-        transform: translateX(800px);
+        transform: translateX(-200px);
     }
 }
 .mute_button{
