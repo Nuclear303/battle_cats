@@ -10,8 +10,8 @@ body{
     width:350px
 }
 .title{
-    animation: titleSlide 3s;
-    -moz-animation: titleSlide 3s;
+    animation: titleSlide 2000ms;
+    -moz-animation: titleSlide 2000ms;
     animation-fill-mode: forwards;
 }
 @keyframes titleSlide{
@@ -19,13 +19,13 @@ body{
         transform: translateY(-100%);
     }
     25% {
-        transform: translateY(145%);
+        transform: translateY(175%);
     }
     50% {
         transform: translateY(130%);
     }
     100% {
-        transform: translateY(150%);
+        transform: translateY(180%);
     }
 }
 .play_button{
