@@ -26,5 +26,21 @@ document.querySelector(".play").addEventListener("click",_=>{
 
 })
 import Cat from "./catConstructor.js"
+import Enemy from "./enemyConstructor.js"
 const tank = new Cat('Tank Cat', 400, 2, "None");
-console.log(tank);
+const doge = new Enemy("Doge", 4, 1, 1, "White",25);
+const doge2 = new Enemy("Doge", 4, 1, 1, "White",25);
+const doge3 = new Enemy("Doge", 4, 1, 1, "White",25);
+const doge4 = new Enemy("Doge", 4, 1, 1, "White",25);
+tank.attack(doge);
+console.log(doge.health);
+tank.attack(doge);
+console.log(doge.health)
+tank.attack(doge2);
+tank.attack(doge2);
+tank.attack(doge3);
+tank.attack(doge3);
+tank.attack(doge4);
+tank.attack(doge4);
+
+

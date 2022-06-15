@@ -1,11 +1,11 @@
-const eoc1level = {
-    Korea = {
-        completed= false,
-        enemies= {
+// const eoc1level = {
+//     Korea = {
+//         completed= false,
+//         enemies= {
             
-        }
-    }
-}
+//         }
+//     }
+// }
 class Chapter{
     constructor(name, last_chapter,level_list, number){
         this.name= name;
