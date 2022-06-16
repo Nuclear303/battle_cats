@@ -6,6 +6,7 @@ export default class Cat{
         this.health = base_health;
         this.damage = base_damage;
         this.xp = 0;
+        this.maxXP = 100;
         this.damageCalc = _=>{
                 if(this.damage >= Math.ceil(base_damage+1.3*Math.log2(this.level))){
                     this.damage++;
@@ -19,14 +20,20 @@ export default class Cat{
         this.healthCalc =_=>{
             this.health = base_health+(this.level*10)
         }
+        this.maxXPCalc = _=>{
+            this.maxXP = 100+(this.level*50);
+        }
         this.levelUp = _=>{
-            this.level++
-            this.damageCalc()
-            this.healthCalc()
-            this.xp == Math.abs(this.xp - 100*Math.pow(2,this.level-3));
+            this.level++;
+            this.damageCalc();
+            this.healthCalc();
+            let toomuch = this.xp - this.maxXP;
+            this.maxXPCalc();
+            this.xp = 0+toomuch;
         }
         this.ifLevelCap =_=>{
-            if(this.xp == 100*Math.pow(2,this.level-3)){
+            if(this.level == 100) return;
+            if(this.xp >= this.maxXP){
                 this.levelUp();
                 alert(`${this.name} osiągnął level ${this.level}!`);
             }
