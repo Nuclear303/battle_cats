@@ -24,6 +24,9 @@
         opacity: 1;
     }
 }
+html{
+    overflow:hidden;
+}
 body{
     background-color: beige;
 }
@@ -95,4 +98,17 @@ body{
 .chapter:hover{
     font-size: 105%;
     transform: translateY(5px);
+}
+.user{
+    position: absolute;
+    left:80%;
+    z-index:3;
+    text-align:center;
+}
+.acceptUser, .changeName{
+    width:100%;
+    border: 5px solid #010000;
+    background-color: #eaaf00;  
+    border-radius: 5px;
+    font-weight:bold;
 }
