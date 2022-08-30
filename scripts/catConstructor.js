@@ -4,6 +4,7 @@ export default class Cat{
         this.level = 1;
         this.attribute = attribute;
         this.health = base_health;
+        this.maxHealth = base_health;
         this.damage = base_damage;
         this.xp = 0;
         this.maxXP = 100;
@@ -18,7 +19,8 @@ export default class Cat{
                 }
         }
         this.healthCalc =_=>{
-            this.health = base_health+(this.level*10)
+            this.maxHealth = this.maxHealth+(this.level*10);
+            this.health = this.health + (this.level*10);
         }
         this.maxXPCalc = _=>{
             this.maxXP = 100+(this.level*50);
