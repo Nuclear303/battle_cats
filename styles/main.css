@@ -112,3 +112,34 @@ body{
     border-radius: 5px;
     font-weight:bold;
 }
+
+footer{
+    margin:0;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left:0;
+    background-color: black;
+    
+}
+.heal{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding-inline: 30px;
+    height:40px;
+}
+.heal-result{
+    font-size: 4;
+    color:#ffffff;
+    font-family: Arial;
+}
+.heal-button{
+    padding: 0;
+    background-color:#000;
+    border:0;
+    height:40px;
+    aspect-ratio: 1/1;
+    color:white;
+    margin-left: 5px;
+}
