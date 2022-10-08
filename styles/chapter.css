@@ -1,9 +1,8 @@
 main{
-    /* display: flex;
+    display: flex;
     align-items: center;
-    justify-content: center; */
-    margin-top: 35vh;
-    margin-left: 45vw;
+    justify-content: center;
+    margin-top: 35vh;    
 }
 .fight{
     width:130px;
@@ -13,4 +12,30 @@ main{
     border: 5px solid #010000;
     background-color: #eaaf00;
     border-radius: 20px;
+}
+
+.enemy{
+    border:1px solid black;
+    text-align: center;
+    width: 300px;
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.enemy div{
+    width:100%;
+}
+.enemy figcaption{
+    border-top: 1px solid black;
+    height:10%;
+    font-weight: bold;
+    width:100%;
+}
+.enemy .stats{
+    width:calc(50% - 1px);
+    border-top: 1px solid black;
+    border-collapse: collapse;
+}
+.enemy .stats:first-of-type{
+    border-right:1px solid black;
 }
