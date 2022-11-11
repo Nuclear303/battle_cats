@@ -32,10 +32,10 @@ main{
     width:100%;
 }
 .enemy .stats{
-    width:calc(50% - 1px);
+    width:50%;
     border-top: 1px solid black;
     border-collapse: collapse;
 }
 .enemy .stats:first-of-type{
-    border-right:1px solid black;
+    box-shadow: 1px 0 #010000 ;
 }
