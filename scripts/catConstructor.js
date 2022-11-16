@@ -1,6 +1,6 @@
 export default class Cat{
-    constructor(name, base_health, base_damage, attribute){
-        this.name = name;
+    constructor(catname, base_health, base_damage, attribute, image){
+        this.name = catname;
         this.level = 1;
         this.attribute = attribute;
         this.health = base_health;
@@ -53,6 +53,7 @@ export default class Cat{
                 this.ifLevelCap();
             }
         }
+        this.image = `../assets/${image}`;
     }
 }
 
