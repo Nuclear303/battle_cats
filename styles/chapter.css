@@ -14,6 +14,22 @@ main{
     border-radius: 20px;
 }
 
+
+.team{
+    width:25vw;
+    height: 70vh;
+    position:fixed;
+    left:0%;
+    top:15%;
+    background-color: #eaaf00;
+    display:flex;
+    padding:5px;
+    flex-wrap: wrap;
+    gap: 1px;
+    border-start-end-radius: 5px;
+    border-end-end-radius: 5px;
+}
+
 .enemy{
     border:1px solid black;
     text-align: center;
@@ -37,5 +53,41 @@ main{
     border-collapse: collapse;
 }
 .enemy .stats:first-of-type{
-    box-shadow: 1px 0 #010000 ;
+    box-shadow: 1px 0 #010000;
+}
+.cat{
+    background-color: rgb(65, 65, 65);
+    width:100vh;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "image name xp xp"
+                         "image hp hp hp";
+    gap:3px;
+}
+.catimage{
+    width:fit-content;
+    max-width:fit-content;
+    grid-area: image;
+}
+.catimage img{
+    height: 62px;
+    aspect-ratio: 1/1;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    display: inline;
+}
+.cat-name, .cat-hp{
+    margin:0;
+    display: inline-block;
+}
+.cat-name{
+    grid-area: name;
+}
+.cat-hp{
+    grid-area: hp;
+}
+.cat-xp{
+    grid-area: xp;
 }
