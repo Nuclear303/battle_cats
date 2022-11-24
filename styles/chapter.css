@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 main{
     display: flex;
     align-items: center;
@@ -16,6 +17,7 @@ main{
 
 
 .team{
+    font-family: 'Roboto',sans-serif;
     width:25vw;
     height: 70vh;
     position:fixed;
@@ -31,6 +33,7 @@ main{
 }
 
 .enemy{
+    font-family: 'Roboto',sans-serif;
     border:1px solid black;
     text-align: center;
     width: 300px;
@@ -56,7 +59,9 @@ main{
     box-shadow: 1px 0 #010000;
 }
 .cat{
+    font-weight: 600;
     background-color: rgb(65, 65, 65);
+    height:calc(100%/6 - 2px);
     width:100vh;
     border-radius: 5px;
     display: grid;
@@ -79,15 +84,23 @@ main{
     display: inline;
 }
 .cat-name, .cat-hp{
-    margin:0;
     display: inline-block;
+}
+.cat-name, .cat-xp{
+    margin-top:2px;
 }
 .cat-name{
     grid-area: name;
 }
 .cat-hp{
+    margin:0;
     grid-area: hp;
 }
 .cat-xp{
     grid-area: xp;
+}
+@media screen and (max-width:1400px) {
+    .catimage img{
+        height: 46px;
+    }
 }
