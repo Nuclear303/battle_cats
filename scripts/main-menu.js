@@ -22,4 +22,6 @@ document.querySelector(".play").addEventListener("click", _=>{
     window.location = "./main.html";
 })
 
-
+if(localStorage.getItem("team") == undefined){
+    localStorage.setItem("team",JSON.stringify([new Cat("Cat",100,8,"None","cat.png"),null,null,null,null,null]));
+}
