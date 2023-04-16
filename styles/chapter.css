@@ -24,13 +24,13 @@ figcaption > .fight{
 .team{
     font-family: 'Roboto',sans-serif;
     width:25vw;
-    height: 70vh;
+    height: 75vh;
     position:fixed;
     left:0%;
-    top:15%;
+    top:12%;
     background-color: #eaaf00;
     display:flex;
-    padding:5px;
+    padding:3px;
     flex-wrap: wrap;
     gap: 1px;
     border-start-end-radius: 5px;
@@ -75,6 +75,9 @@ figcaption > .fight{
     grid-template-areas: "image name xp xp"
                          "image hp hp hp";
     gap:3px;
+    padding: 5px;
+    font-family: Helvetica, sans-serif;
+    place-items: center;
 }
 .catimage{
     width:fit-content;
@@ -82,13 +85,18 @@ figcaption > .fight{
     grid-area: image;
 }
 .catimage img{
-    height: 62px;
+    height: 98px;
     aspect-ratio: 1/1;
     margin-top: 1px;
     margin-bottom: 1px;
     display: inline;
 }
+<<<<<<< Updated upstream
 .cat-name, .cat-hp{
+=======
+.cat-name, .cat-hp, .cat-xp{
+    margin:0;
+>>>>>>> Stashed changes
     display: inline-block;
 }
 .cat-name, .cat-xp{
@@ -96,6 +104,10 @@ figcaption > .fight{
 }
 .cat-name{
     grid-area: name;
+    color: white;
+    font-weight: bold;
+    font-size: larger;
+    padding-top:3px;
 }
 .cat-hp{
     margin:0;
