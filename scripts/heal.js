@@ -1,4 +1,5 @@
-import team from "./teams.js"
+import { save } from "./save.js"
+let team = JSON.parse(localStorage.getItem("team"));
 const deleteHealMessage = _=>{
     document.querySelector(".heal-result").textContent = "";
 }
@@ -6,19 +7,24 @@ const deleteHealMessage = _=>{
 document.querySelector(".heal-button").addEventListener("click", _=> {
     let healed = true;
     team.every(meow =>{
-        if(meow.maxHealth != meow.health){
-            healed = false;
-            return false;
+        if(meow){
+            if(meow.maxHealth != meow.health){
+                healed = false;
+                return false;
+            }
+            return true;
         }
-        console.log(meow.name)
         return true;
     })
     if(!healed){
-        team.forEach(meow =>{        
-            meow.health = meow.maxHealth;
+        team.forEach(meow =>{   
+            if(meow){
+                meow.health = meow.maxHealth;
+            }     
         })
         document.querySelector(".heal-result").textContent = "Your Cats have been succesfully healed"
         setTimeout(deleteHealMessage, 3000);
+        save(team);
     }
     else{
         document.querySelector(".heal-result").textContent = "Your Cats didn't need to be healed";

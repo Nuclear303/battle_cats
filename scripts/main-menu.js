@@ -1,19 +1,17 @@
-
 import Cat from "./catConstructor.js"
-import Enemy from "./enemyConstructor.js"
 
 const mainMenu = document.querySelector("audio")
 document.querySelector(".mute_button").addEventListener("click",_=>{
-    switch(document.querySelector(".mute_button").value){
+    switch(document.querySelector(".mute_button").innerText){
         case "Unmute":{
             mainMenu.play();
             mainMenu.loop = true
-            document.querySelector(".mute_button").value="Mute"
+            document.querySelector(".mute_button").innerText="Mute"
 
         };break;
         case "Mute":{
             mainMenu.pause();
-            document.querySelector(".mute_button").value="Unmute"
+            document.querySelector(".mute_button").innerText="Unmute"
         }
     }
 })

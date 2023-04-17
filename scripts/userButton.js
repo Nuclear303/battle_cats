@@ -1,10 +1,12 @@
 let user = document.querySelector("p.user");
-let acceptUser = document.querySelector("button.acceptUser");
+let acceptUser;
 
 function accept(){
+    acceptUser = document.querySelector("button.acceptUser");
     acceptUser.addEventListener("click",_=>{
         localStorage.setItem("player",document.querySelector("input.userInput").value);
         user.innerHTML += "<br><span style='color:green;'>&#10004; Zaakceptowano</span>"
+        setTimeout(()=>{location.assign(".")}, 1500);
     })
 }
 
