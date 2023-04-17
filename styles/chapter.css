@@ -91,12 +91,7 @@ figcaption > .fight{
     margin-bottom: 1px;
     display: inline;
 }
-<<<<<<< Updated upstream
 .cat-name, .cat-hp{
-=======
-.cat-name, .cat-hp, .cat-xp{
-    margin:0;
->>>>>>> Stashed changes
     display: inline-block;
 }
 .cat-name, .cat-xp{
