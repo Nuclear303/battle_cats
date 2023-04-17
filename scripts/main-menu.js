@@ -1,7 +1,7 @@
 
 import Cat from "./catConstructor.js"
 import Enemy from "./enemyConstructor.js"
-import Player from "./playerConstructor.js"
+
 const mainMenu = document.querySelector("audio")
 document.querySelector(".mute_button").addEventListener("click",_=>{
     switch(document.querySelector(".mute_button").value){
@@ -19,7 +19,7 @@ document.querySelector(".mute_button").addEventListener("click",_=>{
 })
 
 document.querySelector(".play").addEventListener("click", _=>{
-    window.location = "./main.html";
+    window.location = "./base.html";
 })
 
 if(localStorage.getItem("team") == undefined){
