@@ -1,12 +1,23 @@
 import Enemy from "../scripts/enemyConstructor.js"
-let enemies = [
-    new Enemy("Doge",100,1,8,"None",10,"doge.png",false),
-    new Enemy("Snache", 100,1,15,"None", 15, "Snache.png",false),
-    new Enemy("Those Guys", 200,1,20,"None",25,"Those_Guys.png",false),
-    new Enemy("Hippoe",1000, 1, 100, "None",100,"Hippoe.png", false)
-]
-let bosses = [
-]
+let regular = []
+let bosses = []
+
+function checkIfBoss(enemy){
+    if(enemy.isBoss){
+        bosses.push(enemy)
+    }
+    else{
+        regular.push(enemy);
+    }
+}
+
+const enemies = JSON.parse(localStorage.getItem("enemies"));
+switch(localStorage.getItem("currentChapter")){
+    case "EoC1":{
+        enemies.EoC.chapter1.forEach(checkIfBoss);
+        break;
+    }
+}
 document.querySelector(".fight").addEventListener("click", _=>{
     let rnd = Math.floor(Math.random()*enemies.length+1); 
     if(rnd == enemies.length){
