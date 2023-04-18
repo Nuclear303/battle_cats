@@ -1,4 +1,4 @@
-import Enemy from "./context/Enemy";
+import Enemy from "./EnemyConstructor.js";
 
 const enemies = {
   EoC: {
