@@ -24,7 +24,7 @@ figcaption > .fight{
 .team{
     font-family: 'Roboto',sans-serif;
     width:25vw;
-    height: 75vh;
+    height: fit-content;
     position:fixed;
     left:0%;
     top:12%;
@@ -147,4 +147,11 @@ figcaption > .fight{
     .catimage img{
         height: 46px;
     }
+}
+a, a:visited{
+    color:white;
+    text-decoration: none;
+}
+nav a{
+    flex-wrap: nowrap;
 }
