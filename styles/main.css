@@ -166,7 +166,7 @@ nav{
 nav img{
     width:100%;
 }
-nav a{
+nav > a:nth-of-type(1){
     width: 5%;
 }
 div.drop{
