@@ -2,6 +2,10 @@ main{
   display: flex;
   justify-content: center;
   height: 100%;
+  background-image: url(../assets/base-background.webp);
+  background-repeat: no-repeat;
+  background-clip:content-box;
+  background-size: cover;
 }
 .chapters{
   display: flex;
@@ -14,7 +18,7 @@ main{
 
 .chap{
   background-color: bisque;
-  border-radius: 20px;
+  border-radius: 10px;
   width:fit-content;
   height: fit-content;
   background-repeat: no-repeat;
@@ -52,3 +56,10 @@ main{
   background-image: url(../assets/CotC3MenuButton.webp);
 }
 
+main > img{
+  position: absolute;
+  bottom:-7.5%;
+  right:-5%;
+  width: 500px;
+  aspect-ratio: 1/1;
+}
