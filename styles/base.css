@@ -1,0 +1,54 @@
+main{
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+.chapters{
+  display: flex;
+  position: absolute;
+  top:10%;
+  width:910px;
+  flex-wrap: wrap;
+  gap:3px;
+}
+
+.chap{
+  background-color: bisque;
+  border-radius: 20px;
+  width:fit-content;
+  height: fit-content;
+  background-repeat: no-repeat;
+  background-clip: border-box;
+  background-size: cover;
+  width: 300px;
+  aspect-ratio: 5/4;
+}
+
+.chap1{
+  background-image: url(../assets/EoC1MenuButton.webp);
+}
+.chap2{
+  background-image: url(../assets/EoC2MenuButton.webp);
+}
+.chap3{
+  background-image: url(../assets/EoC3MenuButton.webp);
+}
+.chap4{
+  background-image: url(../assets/ItF1MenuButton.webp);
+}
+.chap5{
+  background-image: url(../assets/ItF2MenuButton.webp);
+}
+.chap6{
+  background-image: url(../assets/ItF3MenuButton.webp);
+}
+.chap7{
+  background-image: url(../assets/CotC1MenuButton.webp);
+}
+.chap8{
+  background-image: url(../assets/CotC2MenuButton.webp);
+}
+.chap9{
+  background-image: url(../assets/CotC3MenuButton.webp);
+}
+
