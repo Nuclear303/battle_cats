@@ -16,6 +16,10 @@ document.querySelector(".mute_button").addEventListener("click",_=>{
     }
 })
 
+const images = ["../assets/EoCBackground.webp", "../assets/ItFBackground.webp", "../assets/CotCbackground.webp"]
+document.body.style.backgroundImage = `url(${images[Math.round(Math.random()*2)]})`;
+
+
 document.querySelector(".play").addEventListener("click", _=>{
     window.location = "./base.html";
 })
