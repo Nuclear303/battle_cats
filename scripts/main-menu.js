@@ -16,7 +16,7 @@ document.querySelector(".mute_button").addEventListener("click",_=>{
     }
 })
 
-const images = ["./assets/EoCBackground.webp", "./assets/ItFBackground.webp", "./assets/CotCbackground.webp"]
+const images = ["./assets/EoCBackground.webp", "./assets/ItFBackground.webp", "./assets/CotCBackground.webp"]
 document.body.style.backgroundImage = `url(${images[Math.round(Math.random()*2)]})`;
 
 
