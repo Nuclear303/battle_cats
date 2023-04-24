@@ -2,7 +2,7 @@ main{
   display: flex;
   justify-content: center;
   height: 100%;
-  background-image: url(./assets/base-background.webp);
+  background-image: url(../assets/base-background.webp);
   background-repeat: no-repeat;
   background-clip:content-box;
   background-size: cover;
