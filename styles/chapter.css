@@ -1,4 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+body{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-clip: border-box;
+    width:100vw;
+    height:100vh;
+    top:0;
+    left:0;
+}
 main{
     display: flex;
     align-items: center;
