@@ -28,7 +28,7 @@ switch(localStorage.getItem("currentChapter")){
 }
 document.querySelector(".fight").addEventListener("click", _=>{
     let rnd = Math.floor(Math.random()*regular.length+1); 
-    if(rnd == enemies.length){
+    if(rnd == regular.length){
         rnd = Math.floor(Math.random()*bosses.length);
         document.querySelector("main").innerHTML =`<figure class="enemy"><div style="background-color: rgba(255, 0, 0, 0.75);"><img src="${bosses[rnd].image}" ></div><span class="stats">Health:<br>${bosses[rnd].health}</span><span class="stats">Color:<br>${bosses[rnd].color}</span><figcaption>${bosses[rnd].name}</figcaption></figure>`
         return;
