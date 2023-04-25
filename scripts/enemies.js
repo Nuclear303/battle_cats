@@ -77,7 +77,9 @@ const enemies = {
       new Enemy("I.M. Phace", 44444, 1333, 2, "Alien", 1500, "IMPhace.png", true),
       new Enemy("LeMurr", 20000, 800, 2, "Alien", 900, "LeMurr.png", false),
       new Enemy("Scissoroo", 24000, 2800,1 ,"Alien", 1000, "Scissoroo.png", false),
-      new Enemy("Mistress Celeboodle", 4500, 3750, 1, 1000, "Mistress Celeboodle", false)
+      new Enemy("Mistress Celeboodle", 4500, 3750, 1, "Alien", 1000, "Mistress_Celeboodle.png", false),
+      new Enemy("Cyberhorn",120000, 2200, 1, "Alien", 3000, "Cyberhorn.png", true),
+      new Enemy("Ginger Snache",12000,1800,1, "Red", 600,"Ginger_Snache.png",false)
     ],
     chapter3:[
       new Enemy("Shibalien", 900, 150, 3, "Alien", 100, "Shibalien.png", false),
@@ -90,15 +92,48 @@ const enemies = {
       new Enemy("I.M. Phace", 44444, 1333, 3, "Alien", 1500, "IMPhace.png", true),
       new Enemy("LeMurr", 20000, 800, 3, "Alien", 900, "LeMurr.png", false),
       new Enemy("Calamary", 45000, 1200, 1, "Alien", 2000, "Calamary.png", false),
-      new Enemy("Alpacky", 175000, 1750, 1, "Alien", 5000, "Alpacky.png", true)
+      new Enemy("Alpacky", 175000, 1750, 1, "Alien", 5000, "Alpacky.png", true),
+      new Enemy("Ginger Snache",12000,1800,2, "Red", 600,"Ginger_Snache.png",false)
     ]
   },
   CotC:{
     chapter1:[
-      new Enemy("Shibalien Elite", 7000, 500, "Alien", 400, "Shibalien_Elite.png", false)
+      new Enemy("Shibalien Elite", 7000, 500,1, "Alien", 400, "Shibalien_Elite.png", false),
+      new Enemy("Star Peng", 14000, 750, 1, "Alien", 800, "Star_Peng.png", false),
+      new Enemy("General GreGory", 15000, 567, 1, "Alien", 1000, "General_GreGory.png", false),
+      new Enemy("Le'Solar", 10000, 1147, 1, "Alien", 1000, "LeSolar.png",false),
+      new Enemy("Project A", 12800, 149, 1, "Alien", 750, "ProjectA.png", false),
+      new Enemy("Corporal Weyland", 16000, 222, 1, "Alien", 1250, "CorporalWeyland.png", false),
+      new Enemy("Spacefish Jones", 30000, 1234, 1, "Alien", 2000, "SpacefishJones.png", true)
     ],
-    chapter2:[],
-    chapter3:[]
+    chapter2:[
+      new Enemy("Shibalien Elite", 7000, 500,2, "Alien", 400, "Shibalien_Elite.png", false),
+      new Enemy("Star Peng", 14000, 750, 2, "Alien", 800, "Star_Peng.png", false),
+      new Enemy("General GreGory", 15000, 567, 2, "Alien", 1000, "General_GreGory.png", false),
+      new Enemy("Le'Solar", 10000, 1147, 2, "Alien", 1000, "LeSolar.png",false),
+      new Enemy("Project A", 12800, 149, 2, "Alien", 750, "ProjectA.png", false),
+      new Enemy("Corporal Weyland", 16000, 222, 2, "Alien", 1250, "CorporalWeyland.png", false),
+      new Enemy("Spacefish Jones", 30000, 1234, 2, "Alien", 2000, "SpacefishJones.png", true),
+      new Enemy("Ultra BaaBaa", 500, 1000, 1, "Alien", 300, "UltraBaaBaa.png", false),
+      new Enemy("Kid Tappa", 40000, 50, 1, "Alien", 600, "KidTappa.png", false),
+      new Enemy("Ribbo", 700, 100, 1, "Alien", 450, "Ribbo.png", false)
+    ],
+    chapter3:[
+      new Enemy("Shibalien Elite", 7000, 500,3, "Alien", 400, "Shibalien_Elite.png", false),
+      new Enemy("Star Peng", 14000, 750, 3, "Alien", 800, "Star_Peng.png", false),
+      new Enemy("General GreGory", 15000, 567, 3, "Alien", 1000, "General_GreGory.png", false),
+      new Enemy("Le'Solar", 10000, 1147, 3, "Alien", 1000, "LeSolar.png",false),
+      new Enemy("Project A", 12800, 149, 3, "Alien", 750, "ProjectA.png", false),
+      new Enemy("Corporal Weyland", 16000, 222, 3, "Alien", 1250, "CorporalWeyland.png", false),
+      new Enemy("Spacefish Jones", 30000, 1234, 3, "Alien", 2000, "SpacefishJones.png", true),
+      new Enemy("Ultra BaaBaa", 500, 1000, 2, "Alien", 300, "UltraBaaBaa.png", false),
+      new Enemy("Kid Tappa", 40000, 50, 2, "Alien", 600, "KidTappa.png", false),
+      new Enemy("Ribbo", 700, 100, 2, "Alien", 450, "Ribbo.png", false),
+      new Enemy("Mesocosmocyclone", 44444, 666, 1, "Alien", 1400, "Mesocosmocyclone.png", true),
+      new Enemy("Gardeneel Bros.", 4000, 200, 1, "Alien", 500, "GardeneelBros.png", false),
+      new Enemy("Axoloty", 50000, 40000, 1, "Alien", 3000, "Axoloty.png", true),
+      new Enemy("")
+    ]
   }
 }
 
