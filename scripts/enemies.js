@@ -131,8 +131,7 @@ const enemies = {
       new Enemy("Ribbo", 700, 100, 2, "Alien", 450, "Ribbo.png", false),
       new Enemy("Mesocosmocyclone", 44444, 666, 1, "Alien", 1400, "Mesocosmocyclone.png", true),
       new Enemy("Gardeneel Bros.", 4000, 200, 1, "Alien", 500, "GardeneelBros.png", false),
-      new Enemy("Axoloty", 50000, 40000, 1, "Alien", 3000, "Axoloty.png", true),
-      new Enemy("")
+      new Enemy("Axoloty", 50000, 40000, 1, "Alien", 3000, "Axoloty.png", true)
     ]
   }
 }
