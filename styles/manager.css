@@ -1,0 +1,40 @@
+main{
+    margin-top:10vh;
+    display: flex;
+    flex-wrap: wrap;
+    height:80vh;
+    width:60vw;
+    overflow-x: scroll;
+    float: right;
+    margin-right:10vw;
+}
+div.storage{
+    display: flex;
+    width:fit-content;
+    border:1px solid black;
+    width:100%;
+    max-height: 30vh;
+}
+div.data{
+    width:60%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+div.use{
+    width:40%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.use button{
+    width:calc(100%/3);
+    height:50%;
+}
+.storage .image{
+    height:100%;
+    aspect-ratio: 1/1;
+}
+.image img{
+    height:100%;
+    aspect-ratio: 1/1;
+}
