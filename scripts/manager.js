@@ -14,7 +14,7 @@ const transfer = (index, cat) =>{
                 localStorage.setItem("storage", JSON.stringify(storage));
             }
         })
-        location.assign("#");
+        location.reload();
     }
     else{
         let oldCat = catteam[ix];
@@ -26,7 +26,7 @@ const transfer = (index, cat) =>{
             }
         })
         save(catteam);
-        location.assign("#");
+        location.reload();
     }
 }
 
