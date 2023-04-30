@@ -1,6 +1,15 @@
-document.querySelector("html").addEventListener("click", function() {
-  // Play the audio
-  document.querySelector("audio").play();
-  
-  // Remove the click event listener to prevent multiple playback
+document.addEventListener("keydown", function(event) {
+  if (event.key === "m") {
+    // Get the audio element
+    var audio = document.querySelector("audio");
+    
+    // Check if the audio is playing
+    if (!audio.paused) {
+      // Pause the audio
+      audio.pause();
+    } else {
+      // Start playing the audio
+      audio.play();
+    }
+  }
 });
