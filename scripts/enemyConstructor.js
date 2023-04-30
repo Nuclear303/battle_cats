@@ -37,5 +37,11 @@ export default class Enemy{
     this.reward = reward*this.chapter;
     this.image= `../assets/${image}`;
     this.isBoss = boss;
+    this.attack = (enemy)=>{
+      enemy.health-=this.damage
+      if(enemy.health <= 0){
+          alert(`Przegrałeś walkę.`);
+      }
+  }
   }
 }
