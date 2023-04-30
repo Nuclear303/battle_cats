@@ -145,3 +145,10 @@ nav img{
 nav > a:nth-of-type(1){
     width: 5%;
 }
+a, a:visited{
+    color:white;
+    text-decoration: none;
+}
+nav a{
+    flex-wrap: nowrap;
+}

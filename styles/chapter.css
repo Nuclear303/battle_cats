@@ -41,7 +41,7 @@ figcaption > .fight{
     display:flex;
     padding:3px;
     flex-wrap: wrap;
-    gap: 1px;
+    gap: 2px;
     border-start-end-radius: 5px;
     border-end-end-radius: 5px;
 }
@@ -75,8 +75,8 @@ figcaption > .fight{
 .cat{
     font-weight: 600;
     background-color: rgb(65, 65, 65);
-    height:calc(100%/6 - 2px);
-    width:100vh;
+    height:10vh;
+    width:100vw;
     border-radius: 5px;
     display: grid;
     grid-template-columns: 2fr 1fr 1fr 1fr ;
@@ -89,15 +89,14 @@ figcaption > .fight{
     place-items: center;
 }
 .catimage{
-    width:fit-content;
-    max-width:fit-content;
+    height: 100%;
+    width: fit-content;
+    margin-bottom: 1px;
     grid-area: image;
 }
 .catimage img{
-    height: 98px;
+    height: 100%;
     aspect-ratio: 1/1;
-    margin-top: 1px;
-    margin-bottom: 1px;
     display: inline;
 }
 .cat-name, .cat-hp{
@@ -121,46 +120,5 @@ figcaption > .fight{
     grid-area: xp;
 }
 
-.choice:nth-of-type(1){
-    grid-area: cat1;
-}
-.choice:nth-of-type(2){
-    grid-area: cat2;
-}
-.choice:nth-of-type(3){
-    grid-area: cat3;
-}
-.choice:nth-of-type(4){
-    grid-area: cat4;
-}
-.choice:nth-of-type(5){
-    grid-area: cat5;
-}
-.choice:nth-of-type(6){
-    grid-area: cat6;
-}
-.choice{
-    border:1px solid #000;
-}
 
-.teamChoice{
-    width:300px;
-    height:200px;
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: "cat1 cat2 cat3" "cat4 cat5 cat6";
-    gap:1px;
-}
-@media screen and (max-width:1400px) {
-    .catimage img{
-        height: 46px;
-    }
-}
-a, a:visited{
-    color:white;
-    text-decoration: none;
-}
-nav a{
-    flex-wrap: nowrap;
-}
+
