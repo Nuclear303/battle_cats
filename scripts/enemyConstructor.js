@@ -1,6 +1,3 @@
-/**
- * @class
- */
 export default class Enemy{
 /**
  * 
@@ -33,14 +30,16 @@ export default class Enemy{
         break;
       }
     }
+    this.maxHealth = this.health;
     this.color = color;
     this.reward = reward*this.chapter;
     this.image= `../assets/${image}`;
     this.isBoss = boss;
-    this.attack = (enemy)=>{
+    this.attack = function(enemy){
       enemy.health-=this.damage
       if(enemy.health <= 0){
           alert(`Przegrałeś walkę.`);
+          return 0;
       }
   }
   }
