@@ -9,12 +9,12 @@ export default class Cat{
         this.xp = 0;
         this.maxXP = 100;
         this.damageCalc = function(){
-                if(this.damage >= Math.ceil(base_damage+1.3*Math.log2(this.level))){
+                if(this.damage >= Math.ceil(this.damage+1.3*Math.log2(this.level))){
                     this.damage++;
                     return
                 }
                 else{
-                    this.damage = Math.ceil(base_damage+1.3*Math.log2(this.level))
+                    this.damage = Math.ceil(this.damage+1.3*Math.log2(this.level))
                     return
                 }
         }
