@@ -1,4 +1,5 @@
-const team = JSON.parse(localStorage.getItem("team"));
+import {serializer} from "./serializer.js";
+var team = serializer.deserialize(localStorage.getItem("team"));
 for(let i = 0; i < 6; i++){
   if(team[i] != null){
     document.querySelectorAll("div.catimage > img")[i].src = team[i].image;
@@ -7,3 +8,4 @@ for(let i = 0; i < 6; i++){
     document.querySelectorAll(".cat-hp")[i].textContent = `HP: ${team[i].health}/${team[i].maxHealth}`;
   }
 }
+

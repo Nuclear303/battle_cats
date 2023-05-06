@@ -120,5 +120,30 @@ figcaption > .fight{
     grid-area: xp;
 }
 
+.fighter, .baddie{
+    width:50%;
+    border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.fighter img, .baddie img{
+    width:50%;
+    aspect-ratio: 1/1;
+}
 
+.arena h2{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    text-align: center;
+}
 
+.arena p{
+    width: 100%;
+    text-align: center;
+}
+.arena{
+    display: flex;
+    background-color: aliceblue;
+    
+}
