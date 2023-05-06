@@ -1,5 +1,7 @@
 import { save } from "./save.js"
-let team = JSON.parse(localStorage.getItem("team"));
+import {serializer} from "./localforageSetup.js";
+
+let team = serializer.deserialize(localStorage.getItem("team"));
 const deleteHealMessage = _=>{
     document.querySelector(".heal-result").textContent = "";
 }
@@ -7,6 +9,7 @@ const deleteHealMessage = _=>{
 document.querySelector(".heal-button").addEventListener("click", _=> {
     let healed = true;
     team.every(meow =>{
+        meow.health -= 10;
         if(meow){
             if(meow.maxHealth != meow.health){
                 healed = false;
@@ -25,9 +28,11 @@ document.querySelector(".heal-button").addEventListener("click", _=> {
         document.querySelector(".heal-result").textContent = "Your Cats have been succesfully healed"
         setTimeout(deleteHealMessage, 3000);
         save(team);
+        location.reload();
     }
     else{
         document.querySelector(".heal-result").textContent = "Your Cats didn't need to be healed";
         setTimeout(deleteHealMessage, 3000);
     }
 });
+

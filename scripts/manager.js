@@ -1,9 +1,10 @@
 import {save} from "./save.js"
+import { serializer } from "./localforageSetup.js";
 const main = document.querySelector("main");
-let storage = JSON.parse(localStorage.getItem("storage"));
+let storage = serializer.deserialize(localStorage.getItem("storage"));
 
 const transfer = (index, cat) =>{
-    let catteam = JSON.parse(localStorage.getItem("team"))
+    let catteam = serializer.deserialize(localStorage.getItem("team"));
     let ix = index-1;
     if(catteam[ix]==null){
         catteam[ix] = cat;
@@ -11,7 +12,7 @@ const transfer = (index, cat) =>{
         storage.forEach(item=>{
             if(item == cat){
                 storage.splice(storage.indexOf(item),1);
-                localStorage.setItem("storage", JSON.stringify(storage));
+                localStorage.setItem("storage", serializer.serialize(storage));
             }
         })
         location.reload();
@@ -22,7 +23,7 @@ const transfer = (index, cat) =>{
         storage.forEach(item=>{
             if(item == cat){
                 storage[storage.indexOf(item)] = oldCat;
-                localStorage.setItem("storage", JSON.stringify(storage));
+                localStorage.setItem("storage", serializer.serialize(storage));
             }
         })
         save(catteam);

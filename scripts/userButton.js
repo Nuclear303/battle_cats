@@ -10,15 +10,17 @@ function accept(){
     })
 }
 
+let userName = localStorage.getItem("player")
+    if(userName == undefined){
+        user.innerHTML = "<input class='userInput' type='text' placeholder='Wpisz nazwę gracza...'><br><button class='acceptUser'>Akceptuj</button>";
+        accept();
+    }
+    else{
+        user.innerHTML = `Witaj, ${userName}<br><button class='changeName'>Zmień nazwę</button>`;
+        document.querySelector("button.changeName").addEventListener("click",_=>{
+           user.innerHTML = "<input class='userInput' type='text' placeholder='Wpisz nazwę gracza...'><br><button class='acceptUser'>Akceptuj</button>";
+           accept();
+        })
+    }
 
-if(localStorage.getItem("player") == undefined){
-    user.innerHTML = "<input class='userInput' type='text' placeholder='Wpisz nazwę gracza...'><br><button class='acceptUser'>Akceptuj</button>";
-    accept();
-}
-else{
-    user.innerHTML = `Witaj, ${localStorage.getItem("player")}<br><button class='changeName'>Zmień nazwę</button>`;
-    document.querySelector("button.changeName").addEventListener("click",_=>{
-       user.innerHTML = "<input class='userInput' type='text' placeholder='Wpisz nazwę gracza...'><br><button class='acceptUser'>Akceptuj</button>";
-       accept();
-    })
-}
+
