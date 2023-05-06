@@ -1,7 +1,5 @@
 import {save} from "./save.js"
-import Cat from "./catConstructor.js"
-import Enemy from "./enemyConstructor.js"
-import { serializer } from "./localforageSetup.js"
+import { serializer } from "./serializer.js"
 let regular = []
 let bosses = []
 

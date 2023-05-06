@@ -1,4 +1,4 @@
-import {serializer} from "./localforageSetup.js";
+import {serializer} from "./serializer.js";
 var team = serializer.deserialize(localStorage.getItem("team"));
 for(let i = 0; i < 6; i++){
   if(team[i] != null){

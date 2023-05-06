@@ -1,5 +1,5 @@
 import Cat from "./catConstructor.js"
-import {serializer} from "./localforageSetup.js";
+import {serializer} from "./serializer.js";
 
 const images = ["./assets/EoCBackground.webp", "./assets/ItFBackground.webp", "./assets/CotCBackground.webp"]
 document.body.style.backgroundImage = `url(${images[Math.round(Math.random()*2)]})`;

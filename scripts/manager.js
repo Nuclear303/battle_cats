@@ -1,5 +1,5 @@
 import {save} from "./save.js"
-import { serializer } from "./localforageSetup.js";
+import { serializer } from "./serializer.js";
 const main = document.querySelector("main");
 let storage = serializer.deserialize(localStorage.getItem("storage"));
 

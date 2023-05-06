@@ -1,5 +1,5 @@
 import { save } from "./save.js"
-import {serializer} from "./localforageSetup.js";
+import {serializer} from "./serializer.js";
 
 let team = serializer.deserialize(localStorage.getItem("team"));
 const deleteHealMessage = _=>{

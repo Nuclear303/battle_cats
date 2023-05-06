@@ -1,5 +1,5 @@
 import Enemy from "./enemyConstructor.js";
-import {serializer} from "./localforageSetup.js";
+import {serializer} from "./serializer.js";
 const enemies = {
   EoC: {
     chapter1:[
