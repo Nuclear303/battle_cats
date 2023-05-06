@@ -80,6 +80,7 @@ function getEnemy(){
                             if(enemy.health <= 0 ){
                                 location.reload();
                             }
+                            let team = serializer.deserialize(localStorage.getItem("team"));
                             for(let i = 0; i < 6; i++){
                                 if(team[i].name == chosenCat.name){
                                     team[i] = chosenCat;
