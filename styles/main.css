@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @keyframes butSlide {
     0% {
         transform: translateX(-2000px);
@@ -17,6 +18,9 @@
     100% {
         transform: translateY(0px);
     }
+}
+:root{
+    font-family: 'Roboto';
 }
 html{
     overflow:hidden;
