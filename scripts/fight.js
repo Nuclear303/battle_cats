@@ -42,12 +42,12 @@ function getEnemy(){
     let rnd = Math.floor(Math.random()*(regular.length+1)); 
     if(rnd == regular.length){
         rnd = Math.floor(Math.random()*bosses.length);
-        document.querySelector("main").innerHTML =`<figure class="enemy"><div style="background-color: rgba(255, 0, 0, 0.75);"><img src="${bosses[rnd].image}" ></div><span class="stats">Health:<br>${bosses[rnd].health}</span><span class="stats">Color:<br>${bosses[rnd].color}</span><figcaption>${bosses[rnd].name}</figcaption></figure>`
+        document.querySelector("main").innerHTML =`<div class="enemy"><figure class="enemy"><div style="background-color: rgba(255, 0, 0, 0.75);"><img src="${bosses[rnd].image}" ></div><span class="stats">Health:<br>${bosses[rnd].health}</span><span class="stats">Color:<br>${bosses[rnd].color}</span><figcaption>${bosses[rnd].name}</figcaption></figure></div>`
         localStorage.setItem("enemy",serializer.serialize(bosses[rnd]));
     }
     else{
         localStorage.setItem("enemy",serializer.serialize(regular[rnd]));
-        document.querySelector("main").innerHTML =`<figure class="enemy"><div><img src="${regular[rnd].image}"></div><span class="stats">Health:<br>${regular[rnd].health}</span><span class="stats">Color:<br>${regular[rnd].color}</span><figcaption>${regular[rnd].name}</figcaption></figure>`
+        document.querySelector("main").innerHTML =`<div class="enemy"><figure class="enemy"><div><img src="${regular[rnd].image}"></div><span class="stats">Health:<br>${regular[rnd].health}</span><span class="stats">Color:<br>${regular[rnd].color}</span><figcaption>${regular[rnd].name}</figcaption></figure></div>`
     }
     document.querySelector("main").innerHTML += "<button class='battle'>Battle!</button><button class='flee'>Flee!</button>"
     document.querySelector(".flee").addEventListener("click", getEnemy);
@@ -82,7 +82,7 @@ function getEnemy(){
                             }
                             let team = serializer.deserialize(localStorage.getItem("team"));
                             for(let i = 0; i < 6; i++){
-                                if(team[i].name == chosenCat.name){
+                                if(team[i] && team[i].name == chosenCat.name){
                                     team[i] = chosenCat;
                                     save(team);
                                 }
