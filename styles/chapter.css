@@ -12,7 +12,8 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 35vh;    
+    margin-top: 35vh;
+    flex-wrap: wrap;
 }
 .fight{
     width:130px;
@@ -46,30 +47,36 @@ figcaption > .fight{
     border-end-end-radius: 5px;
 }
 
-.enemy{
+figure.enemy{
     font-family: 'Roboto',sans-serif;
     border:1px solid black;
     text-align: center;
-    width: 300px;
-    height: 200px;
+    width: 20vw;
+    height: fit-content;
+    max-height: 20vh;
     display: flex;
     flex-wrap: wrap;
 }
-.enemy div{
+figure.enemy img{
+    width:25%;
+    aspect-ratio: 1/1;
+}
+figure.enemy div{
     width:100%;
 }
-.enemy figcaption{
+figure.enemy figcaption{
     border-top: 1px solid black;
     height:10%;
     font-weight: bold;
+    font-size: larger;
     width:100%;
 }
-.enemy .stats{
+figure.enemy .stats{
     width:50%;
     border-top: 1px solid black;
     border-collapse: collapse;
 }
-.enemy .stats:first-of-type{
+figure.enemy .stats:first-of-type{
     box-shadow: 1px 0 #010000;
 }
 .cat{
@@ -146,4 +153,18 @@ figcaption > .fight{
     display: flex;
     background-color: aliceblue;
     
+}
+div.enemy{
+    width:100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.battle, .flee{
+    width:10vw;
+    background: linear-gradient(45deg, yellow 10%, #eaaf00 90%);
+    border: 1px solid #010000;
+    margin: 1px;
+    font-family:'Roboto';
 }
