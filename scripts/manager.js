@@ -39,11 +39,11 @@ storage.forEach(cat => {
     const imgDiv = document.createElement('div');
     imgDiv.className = 'image';
     const image = document.createElement('img');
-    image.src = cat.image;
+    image.src = cat.level >= 30 ? cat.trueImage : cat.level >= 10 ? cat.evolvedImage : cat.image;
     imgDiv.appendChild(image);
     const name = document.createElement('p');
     name.className = 'name';
-    name.textContent = cat.name;
+    name.textContent = cat.level >= 30 ? cat.trueName : cat.level >= 10 ? cat.evolvedName : cat.name;
     const hp = document.createElement('p');
     hp.className = 'hp';
     hp.textContent = `HP: ${cat.health}/${cat.maxHealth}`;
