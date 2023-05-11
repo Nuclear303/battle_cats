@@ -11,7 +11,7 @@ document.querySelector(".play").addEventListener("click", _=>{
 
 
 if(serializer.deserialize(localStorage.getItem("team")) == undefined){
-    localStorage.setItem("team",serializer.serialize([new Cat("Cat",100,9,"None","cat.png"),null,null,null,null,null]));
+    localStorage.setItem("team",serializer.serialize([new Cat("Cat",100,9,"None","Cat.png", "Macho Cat", "MachoCat.png", "Mohawk Cat", "MohawkCat.png"),null,null,null,null,null]));
 }
 
 
