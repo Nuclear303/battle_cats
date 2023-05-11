@@ -9,7 +9,7 @@ export const serializer = {
   },
   deserialize: function(value) {
     return JSON.parse(value, function(key, value) {
-      if (typeof value === 'string' && value.indexOf('function') === 0) {
+      if (typeof value === 'string' &&( value.indexOf('function') === 0 || value.indexOf('=>') !== -1)) {
         var functionTemplate = `(${value})`;
         return eval(functionTemplate);
       }
