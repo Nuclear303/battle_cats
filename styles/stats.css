@@ -1,4 +1,25 @@
+main{
+  background-color: #8B6C42;
+  color:white;
+  border-radius: 50px;
+  border: 2px solid black;
+  width:30%;
+  position: relative;
+  margin-inline: auto;
+  overflow-y: scroll;
+  max-height: 50vh;
+  padding: 5px;
+}
+
 .stat{
   width:100%;
   text-align: center;
+}
+
+body{
+  position:absolute;
+  top:0;
+  left:0;
+  background-image: url(../assets/base-background.webp);
+  background-repeat: no-repeat;
 }
