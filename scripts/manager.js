@@ -43,7 +43,7 @@ storage.forEach(cat => {
     imgDiv.appendChild(image);
     const name = document.createElement('p');
     name.className = 'name';
-    name.textContent = cat.level >= 30 ? cat.trueName : cat.level >= 10 ? cat.evolvedName : cat.name;
+    name.textContent = `cat.level >= 30 ? cat.trueName : cat.level >= 10 ? cat.evolvedName : cat.name;`
     const hp = document.createElement('p');
     hp.className = 'hp';
     hp.textContent = `HP: ${cat.health}/${cat.maxHealth}`;
