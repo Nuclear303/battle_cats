@@ -35,10 +35,18 @@ export default class Enemy{
     this.reward = reward*this.chapter;
     this.image= `../assets/${image}`;
     this.isBoss = boss;
-    this.attack = function(enemy){
+    this.attack = (enemy) => {
       enemy.health-=this.damage
       if(enemy.health <= 0){
+        if((this.maxHealth/this.health) > 2){
+          alert(`Przegrałeś walkę. Twoja nagroda: ${Math.floor(this.reward/4)}xp`);
+          enemy.xp += Math.floor(this.reward/4);
+          enemy.ifLevelCap();
+        }
+        else{
           alert(`Przegrałeś walkę.`);
+        }
+          
           return 0;
       }
   }
