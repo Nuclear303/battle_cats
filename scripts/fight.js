@@ -1,5 +1,6 @@
 import {save} from "./save.js"
 import { serializer } from "./serializer.js"
+import { AddStat } from "./statChecker.js"
 let regular = []
 let bosses = []
 
@@ -78,6 +79,7 @@ function getEnemy(){
                                 location.reload();
                             }
                             if(enemy.health <= 0 ){
+                                AddStat(enemy.name)
                                 location.reload();
                             }
                             let team = serializer.deserialize(localStorage.getItem("team"));
