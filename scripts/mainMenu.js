@@ -19,3 +19,7 @@ if(serializer.deserialize(localStorage.getItem("storage")) == undefined){
     localStorage.setItem("storage", serializer.serialize([]));
 }
 
+
+if(localStorage.getItem("stats") == undefined){
+    localStorage.setItem("stats", JSON.stringify({}));
+}
