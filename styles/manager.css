@@ -1,3 +1,10 @@
+
+body{
+    background-image: url(../assets/base-background.webp);
+    background-repeat: no-repeat;
+    background-clip:content-box;
+    background-size: cover;
+}
 main{
     margin-top:10vh;
     display: flex;
