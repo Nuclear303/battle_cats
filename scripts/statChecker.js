@@ -12,7 +12,7 @@ export function AddStat(enemyName){
 if(location.href.includes("stats/index.html")){
   let stats = JSON.parse(localStorage.getItem("stats"));
   const main = document.querySelector("main");
-  if(stats != {}) {
+  if(Object.keys(stats).length === 0) {
     let stat = document.createElement("div");
     stat.className = "stat";
     stat.innerHTML = `<h1>You haven't killed any enemies yet! Go hunt some baddies!</h1>`;
