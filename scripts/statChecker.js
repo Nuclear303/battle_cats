@@ -19,6 +19,7 @@ if(location.href.includes("stats/index.html")){
     main.appendChild(stat);
   }
   else{
+    main.innerHTML = "<h1>Your statistics:</h1>"
     Object.keys(stats).forEach(enemy=>{
       let stat = document.createElement("div");
       stat.className = "stat";
